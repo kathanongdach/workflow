@@ -1,6 +1,6 @@
 # Freshservice Ticket Notifier
 
-## 🇮🇳 ภาษาไทย
+
 ### 📚 คำอธิบายโปรแกรม
 โปรแกรมนี้ถูกพัฒนาเพื่อดึงข้อมูลตั๋ว (Tickets) จากระบบ **Freshservice** ตามสถานะที่กำหนด และส่งการแจ้งเตือนผ่าน **LINE Notify** เพื่อให้ทีมงานทราบถึงสถานะของตั๋วในแต่ละช่วงเวลาโดยอัตโนมัติ
 
@@ -56,7 +56,7 @@
 
 ---
 
-## 🇬🇧 English
+
 ### 📚 Program Description
 This program is designed to retrieve **Freshservice** tickets based on specified statuses and send notifications via **LINE Notify** to inform the team about ticket statuses at scheduled times automatically.
 
