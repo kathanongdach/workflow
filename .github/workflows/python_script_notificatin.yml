@@ -1,0 +1,29 @@
+name: Run Python Script
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # รันทุกวันเวลา 09:00 น. (UTC)
+    - cron: '0 6 * * *'  # รันทุกวันเวลา 13:00 น. (UTC)
+    - cron: '0 8 * * *'  # รันทุกวันเวลา 15:00 น. (UTC)
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # ระบุเวอร์ชัน Python ที่ต้องการ
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # ติดตั้งไลบรารีที่จำเป็นถ้ามี
+          # pip install -r requirements.txt
+
+      - name: Run Python script
+        run: |
+          python your_script.py  # แทนที่ด้วยชื่อไฟล์สคริปต์ของคุณ
